@@ -1,0 +1,48 @@
+### com.example.gui
+
+*   **MainFrame.java:**
+    *   Main class creating the application's main window.
+    *   Uses `BorderLayout` for element placement.
+    *   Contains:
+        *   Space availability display panel (`availabilityPanel`).
+        *   Parking space display panel (`parkingSpotsPanel`).
+        *   Booking panel (`BookingPanel`).
+        *   Application version label (`versionLabel`).
+    *   Main methods:
+        *   `MainFrame()`: Constructor initializing the GUI.
+        *   `refreshParkingSpotsPanel()`: Updates the display of parking spaces based on data from `ParkingService`.
+*   **BookingPanel.java:**
+    *   Class creating the booking panel.
+    *   Allows the user to select the date, time, floor, and enter car details.
+    *   Uses `GridLayout` for element placement.
+    *   Main methods:
+        *   `BookingPanel()`: Constructor initializing the GUI.
+        *   `actionPerformed()`: Event handler for the "Book" button click.
+    *   Class creating the panel to display information about each parking space.
+
+### com.example.model
+
+*   **ParkingSpot.java:**
+    *   Class representing a parking space.
+    *   Contains information about the space number, floor, status (free/occupied), etc.
+
+### com.example.service
+
+*   **ParkingService.java:**
+    *   Class providing services for managing the parking lot.
+    *   Contains methods for:
+        *   Getting a list of all parking spaces (`getAllParkingSpots()`).
+        *   Booking a parking space (`reserveParkingSpot()`).
+        *   Getting the number of available spaces on a floor (`getAvailableSpacesCount()`).
+       
+### Algorithms and Data Structures
+
+*   Lists (`List`) are used to store information about parking spaces.
+*   List filtering (`stream().filter()`) is used to find available spaces.
+
+### Challenges Faced
+
+*   Developing the GUI using Swing.
+*   Implementing booking and parking space management logic.
+*   (Future) - Handling exceptions when working with files.
+*   (Future) - Implementing multithreading to handle requests from multiple users.

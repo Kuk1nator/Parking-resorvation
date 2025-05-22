@@ -1,0 +1,24 @@
+### Functional Requirements:
+
+*   **Parking Space Booking:**
+    *   User must be able to select the start and end date and time for the booking.
+    *   User must be able to select the parking floor.
+    *   User must enter car details (make, model, license plate).
+    *   The system must check the availability of the parking space for the selected time and floor.
+    *   The system must create a booking if the space is available.
+    *   The system must display a booking confirmation with the space number and booking time.
+*   **Displaying Space Availability:**
+    *   The system must display available parking spaces.
+    *       *   The administrator must be able to add new parking spaces.
+    *   The administrator must be able to delete existing parking spaces.
+    *   The administrator must be able to modify information about parking spaces (e.g., floor, type).
+*   **Data Persistence (future):**
+    *   The system must save information about parking spaces and bookings to JSON files.
+    *   The system must load data when the application starts.
+
+### Non-Functional Requirements:
+
+*   **Performance:** The application must respond quickly to user actions.
+*   **Usability:** The application must be intuitive and easy to use.
+*   **Reliability:** The application must operate stably and without errors.
+*   **Scalability:** (Future) The application must be scalable to support a large number of parking spaces and users.
